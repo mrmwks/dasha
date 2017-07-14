@@ -24,29 +24,124 @@
 <body>
 <div class="container-fluid">
     <div class="header">
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-2"><h3>Achieve.Me</h3></div>
-            <div class="col-md-3 col-md-offset-6">
+        <div class="row in_header">
+            <div class="col-md-1 logo"></div>
+            <div class="col-md-2 name"><h3>Achieve.Me</h3></div>
+            <div class="col-md-3 col-md-offset-6 phrase">
                 <h3>POWER</h3>
                 <img src="Nikitos.jpg" alt="Красавец" class="img-circle">
             </div>
         </div>
-    </div>
-    <div class="content">
-        <div class="row">
-            <div class="col-md-2">
-                <div id="menu">
-                    <ul>
-                        <li><a href="#" class="current"><span>home</span></a></li>
-                        <li><a href="#"><span>about</span></a></li>
-                        <li><a href="#"><span>services</span></a></li>
-                        <li><a href="#"><span>solution</span></a></li>
-                        <li><a href="#"><span>contacts</span></a></li>
-                    </ul>
+        <div class="content">
+            <div class="row in_content">
+                <div class="col-md-2 menu">
+                    <div class="list-group menu">
+                        <a href="example.html" class="list-group-item active">Здорово</a>
+                        <a href="#" class="list-group-item">Классно</a>
+                        <a href="#" class="list-group-item">Супер</a>
+                        <a href="#" class="list-group-item">Отлично</a>
+                        <a href="#" class="list-group-item">Даааааааааа</a>
+                    </div>
                 </div>
+                <div class="col-md-10 in_content">
+                    <div class="row chat-window col-xs-5 col-md-12" id="chat_window_1" style="margin-left:10px;">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading top-bar">
+                                    <div class="col-md-8 col-xs-8">
+                                        <h3 class="panel-title"><span class="glyphicon glyphicon-comment"></span> Chat - Codestore.ir</h3>
+                                    </div>
+                                </div>
+                                <div class="panel-body msg_container_base">
+                                    <div class="row msg_container base_sent">
+                                        <div class="col-md-10 col-xs-10">
+                                            <div class="messages msg_sent">
+                                                <p class="">that mongodb thing looks good, huh? tiny master db, and huge document
+                                                    store</p>
+                                                <time datetime="2009-11-13T20:00" class="">Timothy • 51 min</time>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-xs-2 avatar">
+                                            <img src="vovan.jpg" height="100" width="100" class="img-responsive">
+                                        </div>
+                                    </div>
+                                    <div class="row msg_container base_receive">
+                                        <div class="col-md-2 col-xs-2 avatar">
+                                            <img src="kenser.jpg" height="100" width="100" class="img-responsive">
+                                        </div>
+                                        <div class="col-md-10 col-xs-10">
+                                            <div class="messages msg_receive">
+                                                <p class="">that mongodb thing looks good, huh? tiny master db, and huge document
+                                                    store</p>
+                                                <time datetime="2009-11-13T20:00" class="">Timothy • 51 min</time>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row msg_container base_receive">
+                                        <div class="col-md-2 col-xs-2 avatar">
+                                            <img src="kenser.jpg" height="100" width="100" class="img-responsive">
+                                        </div>
+                                        <div class="col-xs-10 col-md-10">
+                                            <div class="messages msg_receive">
+                                                <p class="">that mongodb thing looks good, huh? tiny master db, and huge document
+                                                    store</p>
+                                                <time datetime="2009-11-13T20:00" class="">Timothy • 51 min</time>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row msg_container base_sent">
+                                        <div class="col-xs-10 col-md-10">
+                                            <div class="messages msg_sent">
+                                                <p class="">that mongodb thing looks good, huh? tiny master db, and huge document
+                                                    store</p>
+                                                <time datetime="2009-11-13T20:00" class="">Timothy • 51 min</time>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-xs-2 avatar">
+                                            <img src="vovan.jpg" height="100" width="100" class="img-responsive">
+                                        </div>
+                                    </div>
+                                    <div class="row msg_container base_receive">
+                                        <div class="col-md-2 col-xs-2 avatar">
+                                            <img src="kenser.jpg" height="100" width="100" class="img-responsive">
+                                        </div>
+                                        <div class="col-xs-10 col-md-10">
+                                            <div class="messages msg_receive">
+                                                <p class="">that mongodb thing looks good, huh? tiny master db, and huge document
+                                                    store</p>
+                                                <time datetime="2009-11-13T20:00" class="">Timothy • 51 min</time>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row msg_container base_sent">
+                                        <div class="col-md-10 col-xs-10">
+                                            <div class="messages msg_sent">
+                                                <p class="">that mongodb thing looks good, huh? tiny master db, and huge document
+                                                    store</p>
+                                                <time datetime="2009-11-13T20:00" class="">Timothy • 51 min</time>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-xs-2 avatar">
+                                            <img src="vovan.jpg" height="100" width="100" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer">
+                                    <div class="input-group">
+                                        <input id="btn-input" type="text" class="form-control input-sm chat_input" placeholder="Write your message here...">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary btn-sm" id="btn-chat">Send</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="col-md-10">Content</div>
+            </div>
+
         </div>
     </div>
 </div>

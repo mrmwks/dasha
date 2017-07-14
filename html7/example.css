@@ -1,81 +1,131 @@
-*{
-    margin:0;
+/* CSS used here will be applied after bootstrap.css */
+body{
+    height:100%;
+    min-height:600px;
+    position:fixed;
+    bottom: 0;
+}
+.col-md-2, .col-md-10{
     padding:0;
 }
-body{
-    background:#fff;
-    color: #663162;
-    font:12px/18px Tahoma, Arial, Helvetica, sans-serif;
+.panel{
+    margin-bottom: 0px;
 }
-#menu{
-    width:206px;
-    margin:15px;
+.chat-window{
+    bottom:0;
+    float:right;
+    margin-left:10px;
 }
-#menu ul{
-    list-style:none;
+.chat-window > div > .panel{
+    border-radius: 5px 5px 0 0;
 }
-#menu li{
-    list-style:none;
-    display:block;
-    line-height:32px;
-    height:32px;
-    margin:10px 0;
-    width:206px;
+.icon_minim{
+    padding:2px 10px;
 }
-#menu li a{
-    display:block;
-    height:33px;
-    text-transform:uppercase;
-    font-size:11px;
-    font-weight:bold;
-    line-height:32px;
-    padding:0 0 0 25px;
-    text-decoration:none;
-    color: #425480;
-    cursor:pointer;
-    background:url(images/menu_014_l.jpg) no-repeat left;
+.msg_container_base{
+    background: #e5e5e5;
+    margin: 0;
+    padding: 0 10px 10px;
+    max-height:300px;
+    overflow-x:hidden;
 }
-#menu li a span{
-    display:block;
-    height:32px;
-    line-height:32px;
-    padding:0 105px 0 20px;
-    color:#808080;
-    background:url(images/menu_014_r.jpg) no-repeat right;
+.top-bar {
+    background: #666;
+    color: white;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
 }
-#menu li a:hover{
-    display:block;
-    background:url(images/menu_014_h_l.jpg) no-repeat left;
-    height:32px;
-    color:#676767;
+.msg_receive{
+    padding-left:0;
+    margin-left:0;
 }
-#menu li a:hover span{
-    display:block;
-    float:left;
-    background:url(images/menu_014_h_r.jpg) no-repeat right;
-    color:#676767;
-    height:32px;
+.msg_sent{
+    padding-bottom:20px !important;
+    margin-right:0;
 }
-#menu li a.current, #menu li a.current:hover{
-    display:block;
-    height:32px;
-    color:#676767;
-    text-transform:uppercase;
-    font-size:11px;
-    font-weight:bold;
-    background:url(images/menu_014_h_l.jpg) no-repeat left;
-    line-height:32px;
-    padding:0 0 0 25px;
-    text-decoration:none;
+.messages {
+    background: white;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    max-width:100%;
 }
-#menu li a.current span, #menu li a.current:hover span{
-    display:block;
-    float:left;
-    background:url(images/menu_014_h_r.jpg) no-repeat right;
-    height:32px;
-    color:#676767;
-    line-height:33px;
-    padding:0 130px 0 20px;
+.messages > p {
+    font-size: 13px;
+    margin: 0 0 0.2rem 0;
+}
+.messages > time {
+    font-size: 11px;
+    color: #ccc;
+}
+.msg_container {
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+}
+img {
+    display: block;
+
+}
+.avatar {
+    position: relative;
+}
+.base_receive > .avatar:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border: 5px solid #FFF;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.base_sent {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.base_sent > .avatar:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 5px solid white;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    box-shadow: 1px 1px 2px rgba(black, 0.2); // not quite perfect but close
+}
+
+.msg_sent > time{
+    float: right;
 }
 
 
+
+.msg_container_base::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+.msg_container_base::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.msg_container_base::-webkit-scrollbar-thumb
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+
+.btn-group.dropup{
+    position:fixed;
+    left:0px;
+    bottom:0;
+}
